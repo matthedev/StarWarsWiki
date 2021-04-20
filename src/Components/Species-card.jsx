@@ -9,7 +9,9 @@ const ContentWrapper = styled.div`
   margin: 20px auto;
   opacity: 0.9;
   display: flex;
-  // flex-direction: column;
+  @media (max-width: 1024px) {
+    width: 90%;
+  }
 `;
 
 const SpanWrapper = styled.div`
@@ -20,23 +22,23 @@ const SpanWrapper = styled.div`
 
   span {
     font-size: 22px;
-    // text-align: center;
-    // font-weight: 600;
     line-height: 40px;
     text-transform: capitalize;
+  }
+
+  @media (max-width: 1024px) {
+    span {
+      line-height: 23px;
+      font-size: 18px;
+    }
   }
 `;
 
 const ImgWrapper = styled.div`
   width: 50%;
-text-align: center;
-
-
-
-
+  text-align: center;
   img {
-
-      margin: 15px 50px;
+    margin: 15px 50px;
     max-width: 80%;
     height: 400px;
     transition: all ease 200ms;
@@ -48,6 +50,13 @@ text-align: center;
     }
     }
   }
+  @media (max-width: 1024px) {
+    img {
+      max-width: 70%;
+      height: 320px;
+      margin: 15px 40px;
+    }
+   }
 `;
 
 const Speciescard = ({

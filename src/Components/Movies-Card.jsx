@@ -9,16 +9,28 @@ const MovieWrapper = styled.div`
 const TitleWrapper = styled.div`
   background-color: #333;
   color: #f5c518;
+  padding: 5px;
 
   span {
     font-size: 35px;
     padding: 10px;
+  }
+
+  @media (max-width: 768px) {
+    text-align: center;
+    span {
+      font-size: 22px;
+    }
   }
 `;
 
 const BoxWrapper = styled.div`
   display: flex;
   background-color: #ccc;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const ImgWrapper = styled.div`
@@ -28,6 +40,10 @@ const ImgWrapper = styled.div`
   img {
     width: 100%;
     height: 300px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
   }
 `;
 
@@ -39,6 +55,13 @@ const DescWrapper = styled.div`
   span {
     display: block;
     margin: auto;
+  }
+
+  @media (max-width: 768px) {
+    width: 90%;
+    span {
+      line-height: 26px;
+    }
   }
 `;
 

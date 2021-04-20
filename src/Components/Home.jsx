@@ -8,12 +8,16 @@ const Wrapper = styled.div`
   height: 100vh;
   background-size: cover;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    overflow: scroll;
+  }
 `;
 
-const Home = ({ history }) => {
+const Home = () => {
   return (
     <Wrapper>
-      <Header history={history} />
+      <Header />
       <Content />
     </Wrapper>
   );

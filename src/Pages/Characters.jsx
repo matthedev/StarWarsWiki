@@ -22,6 +22,9 @@ const ContentWrapper = styled.div`
     font-weight: bold;
     font-size: 18px;
   }
+  @media (max-width: 1024px) {
+    width: 90%;
+  }
 `;
 
 const Characters = () => {

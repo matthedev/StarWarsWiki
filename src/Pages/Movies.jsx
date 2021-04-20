@@ -23,6 +23,17 @@ const ContentWrapper = styled.div`
     font-weight: bold;
     font-size: 18px;
   }
+
+  @media (max-width: 1024px) {
+    width: 90%;
+  }
+
+  @media (max-width: 768px) {
+    width: 90%;
+    span {
+      line-height: 20px;
+    }
+  }
 `;
 
 const Movies = () => {

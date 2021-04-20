@@ -19,6 +19,20 @@ const ContentWrapper = styled.div`
   img {
     float: right;
   }
+
+  @media (max-width: 1024px) {
+    width: 90%;
+    text-indent: 0;
+    text-align: center;
+    span {
+      line-height: 30px;
+      font-weight: 400;
+    }
+    img {
+      float: none;
+      width: 100%;
+    }
+  }
 `;
 
 const Content = () => {

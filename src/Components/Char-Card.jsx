@@ -5,7 +5,7 @@ import axios from "axios";
 
 const Wrapper = styled.div`
   background-color: #ccc;
-  min-height: 100vh;
+  max-height: 100vh;
   overflow: hidden;
 `;
 
@@ -25,6 +25,13 @@ const ImgWrapper = styled.div`
     }
     }
   }
+  @media (max-width: 1024px) {
+    img {
+      max-width: 90%;
+      object-fit: cover;
+      height: 260px;
+    }
+  }
 `;
 
 const DescriptionWrapper = styled.div`
@@ -39,6 +46,18 @@ const DescriptionWrapper = styled.div`
   span {
     text-align: center;
     text-transform: capitalize;
+  }
+  @media (max-width: 1024px) {
+    width: 90%;
+    span {
+      line-height: 25px;
+    }
+  }
+
+  @media (max-height: 568px) {
+    span {
+      line-height: 30px;
+    }
   }
 `;
 
