@@ -1,6 +1,6 @@
 {
   "name": "starwarswiki",
-  "homepage": "https://github.com/matthedev/StarWarsWiki",
+  "homepage": "https://github.com/matthedev/StarWarsWiki/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
