@@ -1,0 +1,246 @@
+.Parents,
+#container,
+form {
+  width: 100vw;
+  max-height: calc(100vh - 62px);
+  height: 100vh;
+  background-color: black;
+}
+
+.homebtnparent {
+  text-align: center;
+  padding: 20px;
+}
+
+.HOMEBTN {
+  width: 250px;
+  color: yellow;
+  border: 3px solid white;
+  cursor: pointer;
+  background-color: #333;
+  font-size: 40px;
+}
+
+section,
+.container,
+form {
+  width: 100vw;
+  max-height: calc(100vh - 62px);
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f5c518;
+}
+svg {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+svg {
+  background: url(http://www.starwars-universe.com/images/interface/v6/background_2.jpg);
+}
+svg path {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+svg #Planetes-Lv1 text,
+svg #Planetes_VIP text {
+  transform: translate(0.8em, 0.4em);
+}
+svg text {
+  font-family: "Trebuchet MS", Helvetica, Arial, Sans-serif;
+  text-shadow: 0px 0px 0px transparent;
+}
+svg text:hover {
+  text-shadow: 2px 2px 2px #000000;
+}
+/* Voies Hyperspatiales */
+svg #Voies path {
+  cursor: pointer;
+  stroke-opacity: 0.5;
+  fill: none;
+}
+svg #Voies #Chemin path {
+  stroke: #eee;
+  stroke-width: 2;
+}
+svg #Voies path:hover {
+  stroke-opacity: 1;
+}
+#Voies_H path {
+  stroke-width: 4;
+}
+#Voies_H path:hover {
+  stroke-width: 6;
+}
+
+/* Regions */
+#Regions text {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+#Regions #Outer_Rim {
+  fill-opacity: 0.02;
+  stroke: none;
+}
+#Regions path,
+#Regions circle {
+  fill: rgba(150, 200, 255, 1);
+  stroke: #fff;
+  stroke-dasharray: 2, 5;
+}
+#Regions > path:hover,
+#Regions > circle:hover {
+  opacity: 0.6;
+}
+
+#Unknow_Regions {
+  opacity: 0;
+}
+#Unknow_Regions:hover {
+  opacity: 0 !important;
+}
+#Deep_Core {
+  fill-opacity: 0.35;
+}
+#Core {
+  fill-opacity: 0.3;
+}
+#Colonies {
+  fill-opacity: 0.25;
+}
+#Inner_Rim {
+  fill-opacity: 0.2;
+}
+#Expension_Region {
+  fill-opacity: 0.15;
+}
+#Med_Rim {
+  fill-opacity: 0.1;
+}
+
+text {
+  fill: white;
+}
+
+/* Etats */
+
+svg #Stats path {
+  opacity: 0.25;
+}
+svg #Stats path:hover {
+  opacity: 0.4;
+}
+
+/* Secteurs */
+#Secteurs path {
+  fill: rgba(0, 200, 100, 0.2);
+  stroke: rgba(200, 255, 250, 0.3);
+  stroke-width: 1pt;
+  cursor: pointer;
+}
+#Secteurs path:hover {
+  fill: rgba(50, 250, 150, 0.5);
+  stroke: rgba(200, 255, 250, 0.8);
+  stroke-width: 3pt;
+}
+
+/* Voies hyperspatiales */
+svg g#BG,
+svg g#Voies,
+svg g#Regions,
+svg g#Secteurs,
+svg #Stats,
+svg #Planetes-Lv1 {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Checkbox et selecteurs */
+
+/* Si Officielle est coché, alors tous les elements possédant la class Canon seront visible */
+div #Officielle[type="radio"]:checked ~ div svg g *.Canon {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+div #Officielle[type="radio"]:checked ~ div svg g#Secteurs {
+  display: none;
+}
+div #Officielle[type="radio"]:checked ~ {
+  display: none;
+}
+/* Par défault tous les elements possédant la class Canon sont invisible */
+svg *.Canon {
+  visibility: hidden;
+  opacity: 0;
+}
+/* Par défault tous les elements possédant la class Legendes sont invisible */
+svg g *.Legends {
+  visibility: hidden;
+  opacity: 0;
+}
+/* Si Legende est coché, alors tous les elements possédant la class Legends seront visible */
+div #Legende[type="radio"]:checked ~ div svg g *.Legends {
+  visibility: visible;
+  opacity: 1;
+}
+
+#chek_ways[type="checkbox"]:checked ~ div svg g#Voies,
+#chek_regions[type="checkbox"]:checked ~ div svg g#Regions,
+#chek_sectors[type="checkbox"]:checked ~ div svg g#Secteurs,
+#chek_stats[type="checkbox"]:checked ~ div svg g#Stats,
+#chek_planets[type="checkbox"]:checked ~ div svg g#Planetes-Lv1 {
+  visibility: visible;
+  opacity: 1;
+}
+#chek_fond[type="checkbox"]:checked ~ div svg g#BG {
+  visibility: visible;
+  opacity: 0.5;
+}
+
+#chek_names[type="checkbox"]:checked ~ div svg g text {
+  font-size: 2em;
+}
+
+#chek_names[type="checkbox"]:checked ~ div svg #Planetes-Lv1 text {
+  font-size: 1.5em;
+  opacity: 0.8;
+}
+
+#chek_names[type="checkbox"]:checked ~ div svg g circle:hover + text {
+  font-size: 3em !important;
+  opacity: 1;
+  text-shadow: 2px 2px 2px #ff0000;
+}
+
+/* planètes */
+
+#Planetes_VIP circle,
+#Planetes-Lv1 circle {
+  /*fill:#9CD3A3;
+  stroke:#F40B0B;*/
+  fill: white;
+  stroke: red;
+  cursor: pointer;
+  /*filter:url(#Glow_2);*/
+}
+circle + text {
+  font-size: 0px;
+  cursor: pointer;
+}
+circle:hover + text,
+circle + text:hover {
+  font-size: 24px;
+}
+/* Lv1
+#Planetes-Lv1 circle{
+  fill:#F40B0B;
+  stroke:#DFE8E0;
+  r:6;
+}*/
+#Planetes_VIP circle:hover,
+#Planetes-Lv1 circle:hover {
+  stroke-width: 10;
+}
