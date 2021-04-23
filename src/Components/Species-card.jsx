@@ -9,7 +9,7 @@ const ContentWrapper = styled.div`
   margin: 20px auto;
   opacity: 0.9;
   display: flex;
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     width: 90%;
   }
 `;
@@ -26,7 +26,7 @@ const SpanWrapper = styled.div`
     text-transform: capitalize;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     span {
       line-height: 23px;
       font-size: 18px;
@@ -50,7 +50,7 @@ const ImgWrapper = styled.div`
     }
     }
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     img {
       max-width: 70%;
       height: 320px;

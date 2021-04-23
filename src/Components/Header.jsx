@@ -16,7 +16,7 @@ const HeaderWrapper = styled.div`
     vertical-align: middle;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     width: 90%;
     margin-top: 0;
     img {
@@ -39,7 +39,7 @@ const NavbarWrapper = styled.div`
   margin: 0 auto;
   font-size: 28px;
   text-align: center;
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     font-size: 23px;
   }
 `;
@@ -64,7 +64,7 @@ const NavigationWrap = styled.div`
     color: white;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     .navlink {
       font-size: 16px;
     }

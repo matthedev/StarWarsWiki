@@ -25,7 +25,7 @@ const ImgWrapper = styled.div`
     }
     }
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     img {
       max-width: 90%;
       object-fit: cover;
@@ -47,7 +47,7 @@ const DescriptionWrapper = styled.div`
     text-align: center;
     text-transform: capitalize;
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     width: 90%;
     span {
       line-height: 25px;

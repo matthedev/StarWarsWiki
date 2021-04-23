@@ -20,7 +20,7 @@ const ContentWrapper = styled.div`
     float: right;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     width: 90%;
     text-indent: 0;
     text-align: center;

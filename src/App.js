@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
      <Switch>
-       <Route path="/starwarswiki" exact component={Welcome}/>
+       <Route path="/StarWarsWiki" exact component={Welcome}/>
        <Route path="/home" exact component={Home}/>
        <Route path="/characters" exact component={Characters}/>
        <Route path="/movies" exact component={Movies}/>
