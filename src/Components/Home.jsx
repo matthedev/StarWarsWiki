@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   background: url("https://images.alphacoders.com/107/107763.jpg");
   height: 100vh;
   background-size: cover;
-  overflow: hidden;
+  overflow-y: scroll;
 
   @media (max-width: 768px) {
     overflow: scroll;
