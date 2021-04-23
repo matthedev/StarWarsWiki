@@ -11,11 +11,11 @@ function App() {
     <div>
      <Switch>
        <Route path="/StarWarsWiki" exact component={Welcome}/>
-       <Route path="/home" exact component={Home}/>
-       <Route path="/characters" exact component={Characters}/>
-       <Route path="/movies" exact component={Movies}/>
-       <Route path="/species" exact component={Species}/>
-       <Route path="/map" exact component={Planets}/>
+       <Route path="/StarWarsWiki/home" exact component={Home}/>
+       <Route path="/StarWarsWiki/characters" exact component={Characters}/>
+       <Route path="/StarWarsWiki/movies" exact component={Movies}/>
+       <Route path="/StarWarsWiki/species" exact component={Species}/>
+       <Route path="/StarWarsWiki/map" exact component={Planets}/>
      </Switch>
     </div>
   );
