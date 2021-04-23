@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/StarWarsWiki/static/css/main.180c902b.chunk.css",
-    "main.js": "/StarWarsWiki/static/js/main.25849b22.chunk.js",
-    "main.js.map": "/StarWarsWiki/static/js/main.25849b22.chunk.js.map",
+    "main.js": "/StarWarsWiki/static/js/main.0388a39d.chunk.js",
+    "main.js.map": "/StarWarsWiki/static/js/main.0388a39d.chunk.js.map",
     "runtime-main.js": "/StarWarsWiki/static/js/runtime-main.ec25abf8.js",
     "runtime-main.js.map": "/StarWarsWiki/static/js/runtime-main.ec25abf8.js.map",
     "static/js/2.e5933e36.chunk.js": "/StarWarsWiki/static/js/2.e5933e36.chunk.js",
@@ -55,6 +55,6 @@
     "static/js/runtime-main.ec25abf8.js",
     "static/js/2.e5933e36.chunk.js",
     "static/css/main.180c902b.chunk.css",
-    "static/js/main.25849b22.chunk.js"
+    "static/js/main.0388a39d.chunk.js"
   ]
 }
