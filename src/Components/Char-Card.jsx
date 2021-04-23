@@ -47,6 +47,11 @@ const DescriptionWrapper = styled.div`
     text-align: center;
     text-transform: capitalize;
   }
+
+  @media (max-width: 1024px) {
+    width: 90%;
+  }
+
   @media (max-width: 768px) {
     width: 90%;
     span {
@@ -97,8 +102,6 @@ const CharCard = () => {
       res.data.image = Images[name];
 
       //es name imito chavweret ro dinamiurad wamoigos suratebi da ar mogviwios stringebis chawera key ebshi
-
-      console.log("SPLITTER", name);
 
       setCharacters(res.data);
     };

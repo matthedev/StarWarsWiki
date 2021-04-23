@@ -25,7 +25,7 @@ const ContentWrapper = styled.div`
   }
 
   @media (max-width: 1024px) {
-    width: 90%;
+    width: 80%;
   }
 
   @media (max-width: 768px) {
@@ -43,14 +43,12 @@ const Movies = () => {
     const fetchData = async () => {
       const res = await axios.get("https://swapi.dev/api/films/");
       const movieImg = images;
-      console.log(res.data);
       const result = res.data.results.map((item, index) => {
         return {
           ...item,
           img: movieImg[index],
         };
       });
-      console.log(result);
       setMovies(result);
     };
     fetchData();

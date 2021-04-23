@@ -3,7 +3,7 @@ import "./planets.css";
 
 const Planets = ({ history }) => {
   const toHomeHandler = () => {
-    history.push("/home");
+    history.push("/StarWarsWiki/home");
   };
 
   return (

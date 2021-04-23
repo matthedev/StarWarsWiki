@@ -9,6 +9,9 @@ const ContentWrapper = styled.div`
   margin: 20px auto;
   opacity: 0.9;
   display: flex;
+  @media (max-width: 1024px) {
+    width: 80%;
+  }
   @media (max-width: 768px) {
     width: 90%;
   }

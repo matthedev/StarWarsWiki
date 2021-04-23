@@ -26,8 +26,6 @@ const Species = () => {
         };
       });
       setSpecies(result);
-
-      console.log(res.data.results);
     };
     fetchData();
   }, []);
