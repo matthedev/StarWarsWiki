@@ -38,7 +38,7 @@ const Welcome = ({ history }) => {
   const visitHandler = () => {
     let audio = new Audio(saber);
     audio.play();
-    history.push("/home");
+    history.push("/StarWarsWiki/home");
   };
 
   return (
