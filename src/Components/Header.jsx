@@ -82,23 +82,39 @@ const Header = () => {
         <NavbarWrapper>
           <span>In a galaxy far, far away....</span>
           <NavigationWrap>
-            <NavLink to="/home" className="navlink" activeClassName="active">
+            <NavLink
+              to="/StarWarsWiki/home"
+              className="navlink"
+              activeClassName="active"
+            >
               Home
             </NavLink>
             <NavLink
-              to="/characters"
+              to="/StarWarsWiki/characters"
               className="navlink"
               activeClassName="active"
             >
               Characters
             </NavLink>
-            <NavLink to="/movies" className="navlink" activeClassName="active">
+            <NavLink
+              to="/StarWarsWiki/movies"
+              className="navlink"
+              activeClassName="active"
+            >
               Movies
             </NavLink>
-            <NavLink to="/species" className="navlink" activeClassName="active">
+            <NavLink
+              to="/StarWarsWiki/species"
+              className="navlink"
+              activeClassName="active"
+            >
               Species
             </NavLink>
-            <NavLink to="/map" className="navlink" activeClassName="active">
+            <NavLink
+              to="/StarWarsWiki/map"
+              className="navlink"
+              activeClassName="active"
+            >
               Map
             </NavLink>
           </NavigationWrap>
